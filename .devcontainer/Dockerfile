@@ -1,0 +1,1 @@
+FROM andmos/dotnet-script
