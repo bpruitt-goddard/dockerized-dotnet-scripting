@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Script Debug",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "dotnet",
+            "args": [
+                "exec",
+                // This was found via `find / -name dotnet-script.dll`
+                "/usr/bin/.store/dotnet-script/1.0.1/dotnet-script/1.0.1/tools/net5.0/any/dotnet-script.dll",
+                "${file}",
+            ],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": true,
+        }
+    ]
+}
